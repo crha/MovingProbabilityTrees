@@ -18,7 +18,7 @@ The average amount of successes is easy enough to guess but I want to figure out
 
 ## **Real World Application**
 
-As this problem was inspired by a game mechanic, the game developers might be able to use this work to predict the standard deviation of how many succeeds or failures there will be for an ability stone of X nodes to facet. Being able to predict this will allow the developers to have a better understanding of how powerful the characters might be able to be and adjust the difficulty of the game accordingly for a better player experience. In addition to this, other gaming/gambling systems might use a similar system in the future of which this work can be repurposed for its use.
+As this problem was inspired by a game mechanic, the game developers might be able to use this work to predict the standard deviation of how many succeeds or failures there will be for an ability stone of X nodes to facet. Being able to predict this will allow the developers to have a better understanding of how powerful the characters might be able to be and adjust the difficulty of the game accordingly for a better player experience. In addition to this, other gaming/gambling systems might use a similar system in the future of which this work can be repurposed.
 
 ## **How the Code Works**
 
