@@ -99,3 +99,35 @@ It takes a long time to search a depth of 22 (around 3.1 seconds). Repeating tha
 I would also love to see if there a way to speed up the algorithm in general. I wanted to avoid global variables for the max and min success chances and the final returned hashmap because I wondered if it would cause trouble when attempting to deploy on a website.
 
 Thank you for taking the time to read all of this! Please reach out if you have any questions or would like to let me know what other work this repo might be aiding in!
+
+## **Future Work Continued**
+
+I reached out to a few professors about this problem because I was interested in learning more about it. One of them that responded was Dr. Leonid Koralov, the Professor, Associate Chair for Graduate Studies at the University of Maryland in College Park! The main problem I discussed with him is how to speed up the algorithm as that seemed to be the main limiting factor. At first, I thought this problem would be similar to stochastic processes. In particular, this example by Daniel Jordan seemed nearly identical to mine.
+
+[For example, take a simple random walk. The process starts at 0. There's a 50:50 chance the process goes up or down at each time step. The expected value of the process is always zero, however the variance of the process expands with each step. After 100 steps we expect to be at 0 but we could easily be at 100 (although unlikely).](https://www.quora.com/What-is-a-stochastic-process-What-are-some-real-life-examples)
+
+However, Dr. Koralov pointed me in another direction, to Markov Chains.
+
+## **Markov Chains**
+
+In essence, a [Markov Chain]("https://www.youtube.com/watch?v=i3AkTO9HLXo") is graph that shows the percentage chance of an event occuring based on the previous event.
+
+![Markov_Chain_Example](Images/Markov_Chain_Example.png)
+
+Using this system, we can represent our problem as an Ergodic Markov Chain (a Markov Chain in which it is possible to reach every other state from every other single state ie: no deadends)
+
+![Markov_Chain_Design_1](Images/Markov_Chain_Design_1.png)
+
+Using this design, we can find the Central Limit Theorem and distribution for any possible parameter for these Moving Probability Trees. One quick thing to change though is that we want the rewards to sum up to 0 so that the reward does not infinitely grow. This is what the proper Ergodic Markov Chain looks like for a particular Moving Probability Tree.
+
+![Markov_Chain_Design_2](Images/Markov_Chain_Design_2.png)
+
+## **Next Steps**
+
+Using this proper Ergodic Markov Chain we can find the [stable state]("https://math.stackexchange.com/questions/133214/what-does-the-steady-state-represent-to-a-markov-chain"), or, probability distribution of each state occuring. By making an adjacency matrix and plugging it into a [calculator]("https://discrete-time-markov.netlify.app"), we can find the probability distribution for each state.
+
+![Markov_Chain_Design_3](Images/Markov_Chain_Design_3.png)
+
+## **Conclusions and Notes**
+
+If you made it this far, thank you for reading! What started out as a simple question turned into a small introduction to Markov Chains. Technically we did not need to make the proper Markov Chain respresentation as it is only really required for finding the Central Limit Theorem as opposed to only the stable state. We also could have found the [stationary distribution]("https://brilliant.org/wiki/stationary-distributions/") instead of the stable state but I thought that would have taken up too much space (plus I got lazy haha). If you haven't seen Markov Chains before I hope you followed along alright but if not, I linked a video about it above. Thank you again to Dr. Leonid Koralov for taking the time to teach me about Markov Chains and dealing with my endless questions about finding the probability distribution of different Markov Chains.
