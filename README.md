@@ -1,4 +1,4 @@
-# **Moving Probability Trees**
+# **Moving Probability Trees and an Introduction to Markov Chains**
 
 By: Chris Rha
 
@@ -114,7 +114,7 @@ In essence, a [Markov Chain](https://www.youtube.com/watch?v=i3AkTO9HLXo) is gra
 
 ![Markov_Chain_Example](Images/Markov_Chain_Example.png)
 
-Using this system, we can represent our problem as an Ergodic Markov Chain (a Markov Chain in which it is possible to reach every other state from every other single state, ie: no deadends)
+Using this system, we can represent our problem as an [Ergodic Markov Chain](https://people.math.wisc.edu/~valko/courses/331/MC2.pdf) (a Markov Chain in which it is possible to reach every other state from every other single state, ie: no deadends)
 
 ![Markov_Chain_Design_1](Images/Markov_Chain_Design_1.png)
 
@@ -130,4 +130,4 @@ Using this proper Ergodic Markov Chain we can find the [stable state](https://ma
 
 ## **Conclusions and Notes**
 
-If you made it this far, thank you for reading! What started out as a simple question turned into a small introduction to Markov Chains. Technically we did not need to make the proper Markov Chain respresentation as it is only really required for finding the Central Limit Theorem as opposed to only the stable state. We also could have found the [stationary distribution](https://brilliant.org/wiki/stationary-distributions/) instead of the stable state but I thought that would have taken up too much space (plus I got lazy haha). If you haven't seen Markov Chains before I hope you followed along alright but if not, I linked a video about it above. Thank you again to Dr. Leonid Koralov for taking the time to teach me about Markov Chains and dealing with my endless questions about finding the probability distribution of different Markov Chains.
+If you made it this far, thank you for reading! What started out as a simple question turned into a small introduction to Markov Chains. Technically we did not need to make the proper Markov Chain respresentation as it is only really required for finding the Central Limit Theorem as opposed to only the stable state. We also could have found the [stationary distribution](https://brilliant.org/wiki/stationary-distributions/) instead of the stable state but I thought that would have taken up too much space (plus I didn't feel like doing it haha). If you haven't seen Markov Chains before I hope you could follow along alright but if not, I linked a video about it above. Thank you again to Dr. Leonid Koralov for taking the time to teach me about Markov Chains and deal with my endless questions about finding the probability distribution of different Markov Chains.
