@@ -1,4 +1,4 @@
-# **Moving Probability Trees and an Introduction to Markov Chains**
+# **Moving Probability Trees and an Intro to Markov Chains**
 
 By: Chris Rha
 
